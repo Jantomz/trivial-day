@@ -25,12 +25,20 @@ export default function Initial({
     const storedName = localStorage.getItem("name");
     const storedLeaderboardId = localStorage.getItem("leaderboardId");
     const storedUserId = localStorage.getItem("userId");
+    const date = localStorage.getItem("date");
 
-    const urlParams = new URLSearchParams(window.location.search);
-    setLeaderboardId(urlParams.get("leaderboardId") || "");
-    if (storedName && storedLeaderboardId && storedUserId) {
-      setName(storedName);
-      setIsPregame(false);
+    if (date && new Date(date).getDate() !== new Date().getDate()) {
+      localStorage.removeItem("userId");
+      localStorage.removeItem("leaderboardId");
+      localStorage.removeItem("name");
+      localStorage.removeItem("date");
+    } else {
+      const urlParams = new URLSearchParams(window.location.search);
+      setLeaderboardId(urlParams.get("leaderboardId") || "");
+      if (storedName && storedLeaderboardId && storedUserId) {
+        setName(storedName);
+        setIsPregame(false);
+      }
     }
   }, []);
 
@@ -56,24 +64,27 @@ export default function Initial({
         Answer 7 questions and see how you rank against your friends.
       </h2>
       <div className="h-4"></div>
-      <input
-        placeholder="Name"
-        className={`p-4 text-black mt-4 border-2 border-black rounded-full outline-none text-center font-baskerville ${
-          error.length > 0 ? "border-red-500" : ""
-        }`}
-        autoComplete="off"
-        value={name}
-        onChange={handleInputChange}
-      ></input>
-      <div className="text-red-500 font-baskerville pb-3 text-xs">
-        {error.length > 0 && error}
-      </div>
-      <button
-        className="py-3 px-6 bg-black rounded-full text-white w-[150px] font-baskerville font-bold"
-        onClick={handleSubmit}
-      >
-        {leaderboardId.length > 0 ? "Join" : "Start"}
-      </button>
+      <form onSubmit={handleSubmit}>
+        <input
+          placeholder="Name"
+          className={`p-4 text-black mt-4 border-2 border-black rounded-full outline-none text-center font-baskerville ${
+            error.length > 0 ? "border-red-500" : ""
+          }`}
+          autoComplete="off"
+          value={name}
+          onChange={handleInputChange}
+        ></input>
+        <div className="text-red-500 font-baskerville pb-3 text-xs">
+          {error.length > 0 && error}
+        </div>
+        <button
+          className="py-3 px-6 bg-black rounded-full text-white w-[150px] font-baskerville font-bold"
+          onClick={handleSubmit}
+          type="submit"
+        >
+          {leaderboardId.length > 0 ? "Join" : "Start"}
+        </button>
+      </form>
       <div className="h-4"></div>
       <p className="text-black font-baskerville font-bold">
         {new Date().toLocaleDateString("en-US", {

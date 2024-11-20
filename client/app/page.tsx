@@ -5,7 +5,7 @@ import Leaderboard from "./leaderboard";
 import Initial from "./initial";
 
 // TODO: Prepare the questions to ask + (interesting questions, images?)
-// TODO: Setup an automatic question refresh
+// TODO: Setup an automatic question refresh and user session refresh
 
 export default function Home() {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
@@ -121,6 +121,7 @@ export default function Home() {
         });
         const users = await Promise.all(userPromises);
         localStorage.setItem("leaderboardId", leaderboardId);
+        localStorage.setItem("date", new Date().getDate().toString());
         console.log("Leaderboard Users:", users);
         setUsers(users);
       } catch (error) {
