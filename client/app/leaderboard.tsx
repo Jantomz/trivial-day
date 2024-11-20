@@ -110,7 +110,7 @@ export default function Leaderboard({
       const getLeaderboard = async () => {
         try {
           const res = await fetch(
-            `https://server-492720927923.us-east1.run.app/api/leaderboard${leaderboardId}`,
+            `https://server-492720927923.us-east1.run.app/api/leaderboard/${leaderboardId}`,
             { signal }
           );
 
