@@ -7,7 +7,7 @@ import Initial from "./initial";
 // TODO: Prepare the questions to ask + (interesting questions, images?)
 // TODO: Setup an automatic question refresh
 
-export default function Home({ user }: { user: string }) {
+export default function Home() {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [questions, setQuestions] = useState<
     { question: string; answers: string[]; correctAnswer: string }[]
@@ -186,7 +186,6 @@ export default function Home({ user }: { user: string }) {
     <main className="m-auto h-screen flex justify-center items-center">
       {!showLeaderboard && !showCongratulations && (
         <section className="shadow-sm rounded-lg shadow-black w-[600px] h-[600px] m-auto p-12">
-          {user}
           <div className="text-2xl font-bold py-2 ">Time Left: {timeLeft}s</div>
           <h2 className="text-4xl font-bold py-4">
             {questions[currentQuestionIndex]?.question}
@@ -194,9 +193,6 @@ export default function Home({ user }: { user: string }) {
           <div className="h-12"></div>
           <ul className="flex flex-col gap-4">
             {questions[currentQuestionIndex]?.answers.map((answer) => {
-              const usersChoseThisAnswer = users.filter(
-                (user) => user.choices[currentQuestionIndex] == answer
-              );
               return (
                 <li
                   key={answer}
