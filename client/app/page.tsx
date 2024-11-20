@@ -121,7 +121,7 @@ export default function Home() {
         });
         const users = await Promise.all(userPromises);
         localStorage.setItem("leaderboardId", leaderboardId);
-        localStorage.setItem("date", new Date().getDate().toString());
+        localStorage.setItem("date", new Date().toLocaleDateString());
         console.log("Leaderboard Users:", users);
         setUsers(users);
       } catch (error) {

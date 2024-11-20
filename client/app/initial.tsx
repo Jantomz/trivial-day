@@ -27,7 +27,7 @@ export default function Initial({
     const storedUserId = localStorage.getItem("userId");
     const date = localStorage.getItem("date");
 
-    if (date && new Date(date).getDate() !== new Date().getDate()) {
+    if (date && date !== new Date().toLocaleDateString()) {
       localStorage.removeItem("userId");
       localStorage.removeItem("leaderboardId");
       localStorage.removeItem("name");
@@ -64,7 +64,10 @@ export default function Initial({
         Answer 7 questions and see how you rank against your friends.
       </h2>
       <div className="h-4"></div>
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col justify-center items-center"
+      >
         <input
           placeholder="Name"
           className={`p-4 text-black mt-4 border-2 border-black rounded-full outline-none text-center font-baskerville ${

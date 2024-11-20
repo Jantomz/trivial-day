@@ -79,7 +79,7 @@ export default function Leaderboard({
           const data = await res.json();
           console.log(data);
           localStorage.setItem("userId", data.user._id);
-          localStorage.setItem("date", new Date().getDate().toString());
+          localStorage.setItem("date", new Date().toLocaleDateString());
           window.history.replaceState(
             null,
             "",
@@ -128,7 +128,7 @@ export default function Leaderboard({
           });
           const users = await Promise.all(userPromises);
           localStorage.setItem("leaderboardId", leaderboardId);
-          localStorage.setItem("date", new Date().getDate().toString());
+          localStorage.setItem("date", new Date().toLocaleDateString());
           console.log(users);
           setLeaderboard(users);
         } catch (error) {
