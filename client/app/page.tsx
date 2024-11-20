@@ -37,7 +37,9 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchQuestions() {
-      const response = await fetch("http://localhost:8080/api/questions");
+      const response = await fetch(
+        "https://server-492720927923.us-east1.run.app/api/questions"
+      );
       const data = await response.json();
       console.log(data);
       setQuestions(data);
@@ -55,7 +57,7 @@ export default function Home() {
       const signal = controller.signal;
 
       const userRes = await fetch(
-        `http://localhost:8080/api/user/${storedUserId}`,
+        `https://server-492720927923.us-east1.run.app/api/user/${storedUserId}`,
         {
           signal,
         }
@@ -102,7 +104,7 @@ export default function Home() {
       if (!leaderboardId) return;
       try {
         const res = await fetch(
-          `http://localhost:8080/api/leaderboard/${leaderboardId}`,
+          `https://server-492720927923.us-east1.run.app/api/leaderboard/${leaderboardId}`,
           { signal }
         );
 
@@ -111,7 +113,7 @@ export default function Home() {
         const userIds = data.leaderboard.users;
         const userPromises = userIds.map(async (userId: { _id: string }) => {
           const userRes = await fetch(
-            `http://localhost:8080/api/user/${userId._id}`,
+            `https://server-492720927923.us-east1.run.app/api/user/${userId._id}`,
             { signal }
           );
           const user = await userRes.json();

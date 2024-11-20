@@ -59,20 +59,23 @@ export default function Leaderboard({
     if (!localStorage.getItem("userId")) {
       const logGame = async () => {
         try {
-          const res = await fetch("http://localhost:8080/api/user", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              name,
-              score,
-              choices,
-              time,
-              leaderboardId,
-            }),
-            signal,
-          });
+          const res = await fetch(
+            "https://server-492720927923.us-east1.run.app/api/user",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                name,
+                score,
+                choices,
+                time,
+                leaderboardId,
+              }),
+              signal,
+            }
+          );
           const data = await res.json();
           console.log(data);
           localStorage.setItem("userId", data.user._id);
@@ -85,7 +88,7 @@ export default function Leaderboard({
           const userIds = data.leaderboard.users;
           const userPromises = userIds.map(async (userId: string) => {
             const userRes = await fetch(
-              `http://localhost:8080/api/user/${userId}`,
+              `https://server-492720927923.us-east1.run.app/api/user/${userId}`,
               { signal }
             );
             const user = await userRes.json();
@@ -107,7 +110,7 @@ export default function Leaderboard({
       const getLeaderboard = async () => {
         try {
           const res = await fetch(
-            `http://localhost:8080/api/leaderboard/${leaderboardId}`,
+            `https://server-492720927923.us-east1.run.app/api/leaderboard${leaderboardId}`,
             { signal }
           );
 
@@ -116,7 +119,7 @@ export default function Leaderboard({
           const userIds = data.leaderboard.users;
           const userPromises = userIds.map(async (userId: { _id: string }) => {
             const userRes = await fetch(
-              `http://localhost:8080/api/user/${userId._id}`,
+              `https://server-492720927923.us-east1.run.app/api/user/${userId._id}`,
               { signal }
             );
             const user = await userRes.json();
