@@ -99,7 +99,7 @@ export default function Initial({
       </p>
       <div className="h-8"></div>
       <div className="text-[#575757] text-center text-xs font-baskerville">
-        Trivia resets at every night at 11:59 EST
+        Trivia resets every night at 11:59 EST
       </div>
       <div className="text-[#575757] text-center text-xs font-baskerville">
         Click here to sign up for email reminders!

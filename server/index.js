@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const fs = require("fs");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -36,49 +38,32 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/questions", (req, res) => {
-  res.json([
-    {
-      question: "What is the full name of the Talk Tuah Podcast host?",
-      answers: [
-        "Sarah Wiley",
-        "Hannah Brown",
-        "Talia Saunders",
-        "Haliey Welch",
-      ],
-      correctAnswer: "Haliey Welch",
-    },
-    {
-      question:
-        "Which country flies a green, white, and orange (in that order) tricolor flag?",
-      answers: ["Ivory Coast", "Italy", "Ireland", "India"],
-      correctAnswer: "Ireland",
-    },
-    {
-      question: "What is widely referred to as 'The Game'?",
-      answers: ["The Superbowl", "Harvard v. Yale", "Squidgame", "TicTacToe"],
-      correctAnswer: "Harvard v. Yale",
-    },
-    {
-      question: "What is not brainrot?",
-      answers: ["Skibidi Toilet", "Pink Tortillas", "Fanum Tax", "Rizzler"],
-      correctAnswer: "Pink Tortillas",
-    },
-    {
-      question: "How many states are in the USA?",
-      answers: ["51", "52", "49", "50"],
-      correctAnswer: "50",
-    },
-    {
-      question: "Which horoscope sign is a fish?",
-      answers: ["Pisces", "Big Dipper", "Taurus", "Virgo"],
-      correctAnswer: "Pisces",
-    },
-    {
-      question: "Which app has the most total users?",
-      answers: ["TikTok", "Twitter", "Facebook", "Instagram"],
-      correctAnswer: "Instagram",
-    },
-  ]);
+  const today = new Date();
+  const targetDate = new Date("November 20, 2024");
+  const timeDifference = today - targetDate;
+  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+  // Load the JSON file
+  fs.readFile("randomized_questions.txt", "utf8", (err, data) => {
+    if (err) {
+      console.error("Error reading the file:", err);
+      return;
+    }
+
+    try {
+      const jsonData = JSON.parse(data); // Parse the JSON string into a JavaScript object
+      const batchSize = 7;
+      const batchIndex =
+        daysDifference % Math.ceil(jsonData.length / batchSize);
+      const startIndex = batchIndex * batchSize;
+      const endIndex = startIndex + batchSize;
+      const batch = jsonData.slice(startIndex, endIndex);
+
+      res.json(batch);
+    } catch (error) {
+      console.error("Error parsing JSON:", error);
+    }
+  });
 });
 
 app.get("/api/user/:id", async (req, res) => {

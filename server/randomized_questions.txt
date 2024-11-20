@@ -1,0 +1,672 @@
+[
+  {
+    "question": "What is the name of Taylor Swift's 2023 concert tour?",
+    "answers": [
+      "Lover Fest",
+      "1989 World Tour",
+      "The Eras Tour",
+      "Reputation Tour"
+    ],
+    "correctAnswer": "The Eras Tour"
+  },
+  {
+    "question": "What celebrity\u2019s Met Gala outfit was compared to a \u2018cat bed\u2019?",
+    "answers": [
+      "Lil Nas X",
+      "Doja Cat",
+      "Jared Leto",
+      "Kim Kardashian"
+    ],
+    "correctAnswer": "Doja Cat"
+  },
+  {
+    "question": "Who is known as the 'King of Twitch'?",
+    "answers": [
+      "DrLupo",
+      "Pokimane",
+      "Kai Cenat",
+      "xQc"
+    ],
+    "correctAnswer": "Kai Cenat"
+  },
+  {
+    "question": "Which beverage brand is known for its 'Share a Coke' campaign?",
+    "answers": [
+      "Coca-Cola",
+      "Pepsi",
+      "Dr Pepper",
+      "Sprite"
+    ],
+    "correctAnswer": "Coca-Cola"
+  },
+  {
+    "question": "Who starred as Ken in *Barbie* (2023)?",
+    "answers": [
+      "Ryan Gosling",
+      "Ryan Reynolds",
+      "Henry Cavill",
+      "Chris Hemsworth"
+    ],
+    "correctAnswer": "Ryan Gosling"
+  },
+  {
+    "question": "Which app has the most total users?",
+    "answers": [
+      "Instagram",
+      "TikTok",
+      "Facebook",
+      "Twitter"
+    ],
+    "correctAnswer": "Instagram"
+  },
+  {
+    "question": "What is 'fanum tax' slang for?",
+    "answers": [
+      "Splitting group costs",
+      "Cover charge for an event",
+      "Subscription fees",
+      "Unspoken rules"
+    ],
+    "correctAnswer": "Splitting group costs"
+  },
+  {
+    "question": "Who collaborated with Crocs on boots in 2023?",
+    "answers": [
+      "Post Malone",
+      "MSCHF",
+      "Kanye West",
+      "Justin Bieber"
+    ],
+    "correctAnswer": "MSCHF"
+  },
+  {
+    "question": "Which horoscope sign is a fish?",
+    "answers": [
+      "Taurus",
+      "Pisces",
+      "Big Dipper",
+      "Virgo"
+    ],
+    "correctAnswer": "Pisces"
+  },
+  {
+    "question": "What is not brainrot?",
+    "answers": [
+      "Rizzler",
+      "Pink Tortillas",
+      "Fanum Tax",
+      "Skibidi Toilet"
+    ],
+    "correctAnswer": "Pink Tortillas"
+  },
+  {
+    "question": "What planet is closest to the Sun?",
+    "answers": [
+      "Mars",
+      "Venus",
+      "Mercury",
+      "Earth"
+    ],
+    "correctAnswer": "Mercury"
+  },
+  {
+    "question": "Which Marvel movie features Wakanda?",
+    "answers": [
+      "Black Panther",
+      "Iron Man",
+      "Thor",
+      "Doctor Strange"
+    ],
+    "correctAnswer": "Black Panther"
+  },
+  {
+    "question": "Which reality TV villain said, 'I\u2019m not here to make friends'?",
+    "answers": [
+      "Christine Quinn",
+      "Omarosa",
+      "Spencer Pratt",
+      "Tiffany 'New York' Pollard"
+    ],
+    "correctAnswer": "Christine Quinn"
+  },
+  {
+    "question": "Which horror villain did the 'Wednesday dance' go viral with?",
+    "answers": [
+      "Michael Myers",
+      "Megan",
+      "Ghostface",
+      "Chucky"
+    ],
+    "correctAnswer": "Megan"
+  },
+  {
+    "question": "Which show popularized the phrase 'Winter is Coming'?",
+    "answers": [
+      "The Witcher",
+      "Vikings",
+      "Lord of the Rings",
+      "Game of Thrones"
+    ],
+    "correctAnswer": "Game of Thrones"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "answers": [
+      "Seoul",
+      "Bangkok",
+      "Beijing",
+      "Tokyo"
+    ],
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "question": "What is the Skibidi Toilet chasing?",
+    "answers": [
+      "Showerheads",
+      "Sink Soldiers",
+      "Rizzlers",
+      "Cameramen"
+    ],
+    "correctAnswer": "Cameramen"
+  },
+  {
+    "question": "What is the most-streamed song on Spotify (2023)?",
+    "answers": [
+      "As It Was",
+      "Blinding Lights",
+      "Shape of You",
+      "Despacito"
+    ],
+    "correctAnswer": "Blinding Lights"
+  },
+  {
+    "question": "What is the official language of Brazil?",
+    "answers": [
+      "Spanish",
+      "English",
+      "Portuguese",
+      "French"
+    ],
+    "correctAnswer": "Portuguese"
+  },
+  {
+    "question": "How many states are in the USA?",
+    "answers": [
+      "50",
+      "49",
+      "52",
+      "51"
+    ],
+    "correctAnswer": "50"
+  },
+  {
+    "question": "What is the term for fear of spiders?",
+    "answers": [
+      "Acrophobia",
+      "Claustrophobia",
+      "Arachnophobia",
+      "Thanatophobia"
+    ],
+    "correctAnswer": "Arachnophobia"
+  },
+  {
+    "question": "What is the largest mammal in the world?",
+    "answers": [
+      "Giraffe",
+      "Elephant",
+      "Orca",
+      "Blue Whale"
+    ],
+    "correctAnswer": "Blue Whale"
+  },
+  {
+    "question": "What TikTok trend involves slapping people with tortillas?",
+    "answers": [
+      "Rizz Royale",
+      "Flatbread Fight",
+      "SmackFest",
+      "Tortilla Slap Challenge"
+    ],
+    "correctAnswer": "Tortilla Slap Challenge"
+  },
+  {
+    "question": "What AI filter made people look old in 2023?",
+    "answers": [
+      "AgeMe AI",
+      "MyHeritage AI",
+      "Time Machine AI",
+      "Lensa AI"
+    ],
+    "correctAnswer": "Time Machine AI"
+  },
+  {
+    "question": "Which streaming service hosts *Stranger Things*?",
+    "answers": [
+      "Hulu",
+      "Disney+",
+      "Amazon Prime",
+      "Netflix"
+    ],
+    "correctAnswer": "Netflix"
+  },
+  {
+    "question": "What is the full name of the Talk Tuah Podcast host?",
+    "answers": [
+      "Talia Saunders",
+      "Haliey Welch",
+      "Hannah Brown",
+      "Sarah Wiley"
+    ],
+    "correctAnswer": "Haliey Welch"
+  },
+  {
+    "question": "What term describes someone who only eats chicken tenders?",
+    "answers": [
+      "Tendie Addict",
+      "Chickenitarian",
+      "Picky Eater",
+      "Tendie Vibes"
+    ],
+    "correctAnswer": "Tendie Addict"
+  },
+  {
+    "question": "What is MrBeast\u2019s real first name?",
+    "answers": [
+      "Joseph",
+      "Jimmy",
+      "James",
+      "Jake"
+    ],
+    "correctAnswer": "Jimmy"
+  },
+  {
+    "question": "What\u2019s the flavor of Prime's blue bottle?",
+    "answers": [
+      "Blueberry Blast",
+      "Arctic Freeze",
+      "Tropical Punch",
+      "Blue Raspberry"
+    ],
+    "correctAnswer": "Blue Raspberry"
+  },
+  {
+    "question": "What viral drink order features a 'Pinkity Drinkity'?",
+    "answers": [
+      "Strawberry Frappe",
+      "Starbucks Pink Drink",
+      "Matcha Latte",
+      "Boba Tea"
+    ],
+    "correctAnswer": "Starbucks Pink Drink"
+  },
+  {
+    "question": "What social media app is known for disappearing photos and messages?",
+    "answers": [
+      "Instagram",
+      "TikTok",
+      "Snapchat",
+      "WhatsApp"
+    ],
+    "correctAnswer": "Snapchat"
+  },
+  {
+    "question": "What is 'delulu' short for?",
+    "answers": [
+      "Digital Loser",
+      "Delusional",
+      "Devious Lurker",
+      "Deliciously Lovely"
+    ],
+    "correctAnswer": "Delusional"
+  },
+  {
+    "question": "Which artist is known as the 'Queen of Pop'?",
+    "answers": [
+      "Madonna",
+      "Lady Gaga",
+      "Britney Spears",
+      "Adele"
+    ],
+    "correctAnswer": "Madonna"
+  },
+  {
+    "question": "Who is the voice of Bowser in *The Super Mario Bros. Movie*?",
+    "answers": [
+      "Jack Black",
+      "Charlie Day",
+      "Seth Rogen",
+      "Chris Pratt"
+    ],
+    "correctAnswer": "Jack Black"
+  },
+  {
+    "question": "What video game features a plumber named Mario saving Princess Peach?",
+    "answers": [
+      "Super Mario Bros.",
+      "Pac-Man",
+      "Donkey Kong",
+      "The Legend of Zelda"
+    ],
+    "correctAnswer": "Super Mario Bros."
+  },
+  {
+    "question": "Which animal is known as the 'King of the Jungle'?",
+    "answers": [
+      "Lion",
+      "Tiger",
+      "Gorilla",
+      "Elephant"
+    ],
+    "correctAnswer": "Lion"
+  },
+  {
+    "question": "What does 'cap' mean in Gen Z slang?",
+    "answers": [
+      "A truth",
+      "A joke",
+      "A lie",
+      "A hat"
+    ],
+    "correctAnswer": "A lie"
+  },
+  {
+    "question": "What slang term means 'charismatic flirting ability'?",
+    "answers": [
+      "W Riz",
+      "No Cap",
+      "Slaps",
+      "Bet"
+    ],
+    "correctAnswer": "W Riz"
+  },
+  {
+    "question": "What is the main ingredient in guacamole?",
+    "answers": [
+      "Tomatoes",
+      "Avocado",
+      "Lime",
+      "Onion"
+    ],
+    "correctAnswer": "Avocado"
+  },
+  {
+    "question": "What does 'NPC' mean on TikTok?",
+    "answers": [
+      "Next Popular Creator",
+      "Non-Player Character",
+      "New Player Club",
+      "Not Perfectly Cool"
+    ],
+    "correctAnswer": "Non-Player Character"
+  },
+  {
+    "question": "Who played Wednesday Addams in Netflix\u2019s *Wednesday* (2022)?",
+    "answers": [
+      "Jenna Ortega",
+      "Sadie Sink",
+      "Millie Bobby Brown",
+      "Chloe Grace Moretz"
+    ],
+    "correctAnswer": "Jenna Ortega"
+  },
+  {
+    "question": "What is the term for a baby kangaroo?",
+    "answers": [
+      "Fawn",
+      "Joey",
+      "Pup",
+      "Cub"
+    ],
+    "correctAnswer": "Joey"
+  },
+  {
+    "question": "Who won the 2023 Women\u2019s FIFA World Cup?",
+    "answers": [
+      "Spain",
+      "Germany",
+      "England",
+      "USA"
+    ],
+    "correctAnswer": "Spain"
+  },
+  {
+    "question": "Which K-pop group released the song 'Butter'?",
+    "answers": [
+      "BTS",
+      "Blackpink",
+      "TWICE",
+      "EXO"
+    ],
+    "correctAnswer": "BTS"
+  },
+  {
+    "question": "What animal is associated with Doja Cat\u2019s viral red carpet look?",
+    "answers": [
+      "Cow",
+      "Cat",
+      "Bat",
+      "Spider"
+    ],
+    "correctAnswer": "Cat"
+  },
+  {
+    "question": "Which fast-food chain introduced 'grimace shakes' in 2023?",
+    "answers": [
+      "McDonald\u2019s",
+      "Wendy\u2019s",
+      "Taco Bell",
+      "Burger King"
+    ],
+    "correctAnswer": "McDonald\u2019s"
+  },
+  {
+    "question": "Who voices Donkey Kong in *The Super Mario Bros. Movie* (2023)?",
+    "answers": [
+      "Jack Black",
+      "Seth Rogen",
+      "Chris Pratt",
+      "Keegan-Michael Key"
+    ],
+    "correctAnswer": "Seth Rogen"
+  },
+  {
+    "question": "Which artist painted the 'Mona Lisa'?",
+    "answers": [
+      "Michelangelo",
+      "Van Gogh",
+      "Picasso",
+      "Leonardo da Vinci"
+    ],
+    "correctAnswer": "Leonardo da Vinci"
+  },
+  {
+    "question": "Who is 'The Weeknd's' real-life alter ego?",
+    "answers": [
+      "Abel Tesfaye",
+      "Drake Lite",
+      "XO Abel",
+      "Tesfaye Tuesday"
+    ],
+    "correctAnswer": "Abel Tesfaye"
+  },
+  {
+    "question": "Which pop artist released the hit single 'Flowers' in 2023?",
+    "answers": [
+      "Ariana Grande",
+      "Miley Cyrus",
+      "Doja Cat",
+      "Dua Lipa"
+    ],
+    "correctAnswer": "Miley Cyrus"
+  },
+  {
+    "question": "What\u2019s the name of the AI rapper that went viral in 2024?",
+    "answers": [
+      "Lil Algorithm",
+      "AIce Cube",
+      "RoboRapper",
+      "FN Meka"
+    ],
+    "correctAnswer": "FN Meka"
+  },
+  {
+    "question": "Who is considered the 'CEO of Rizz'?",
+    "answers": [
+      "Rizz Khalifa",
+      "Michael B. Jordan",
+      "Pete Davidson",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "correctAnswer": "Pete Davidson"
+  },
+  {
+    "question": "Which holiday falls on October 31?",
+    "answers": [
+      "Easter",
+      "Christmas",
+      "Thanksgiving",
+      "Halloween"
+    ],
+    "correctAnswer": "Halloween"
+  },
+  {
+    "question": "Who is Baby Gronk allegedly 'rizzing up'?",
+    "answers": [
+      "Hailey Bieber",
+      "Addison Rae",
+      "Olivia Dunne",
+      "Emma Chamberlain"
+    ],
+    "correctAnswer": "Olivia Dunne"
+  },
+  {
+    "question": "What year did the Titanic sink?",
+    "answers": [
+      "1920",
+      "1905",
+      "1912",
+      "1918"
+    ],
+    "correctAnswer": "1912"
+  },
+  {
+    "question": "What is widely referred to as 'The Game'?",
+    "answers": [
+      "TicTacToe",
+      "Squidgame",
+      "The Superbowl",
+      "Harvard v. Yale"
+    ],
+    "correctAnswer": "Harvard v. Yale"
+  },
+  {
+    "question": "What is the name of Elon Musk's space exploration company?",
+    "answers": [
+      "Tesla",
+      "Virgin Galactic",
+      "SpaceX",
+      "Blue Origin"
+    ],
+    "correctAnswer": "SpaceX"
+  },
+  {
+    "question": "Which country flies a green, white, and orange (in that order) tricolor flag?",
+    "answers": [
+      "Ivory Coast",
+      "India",
+      "Ireland",
+      "Italy"
+    ],
+    "correctAnswer": "Ireland"
+  },
+  {
+    "question": "What is the fictional metal in *Black Panther*?",
+    "answers": [
+      "Mithril",
+      "Unobtainium",
+      "Adamantium",
+      "Vibranium"
+    ],
+    "correctAnswer": "Vibranium"
+  },
+  {
+    "question": "What is the smallest unit of matter?",
+    "answers": [
+      "Proton",
+      "Electron",
+      "Atom",
+      "Molecule"
+    ],
+    "correctAnswer": "Atom"
+  },
+  {
+    "question": "What company owns the X social media platform?",
+    "answers": [
+      "X Corp.",
+      "Twitter",
+      "Alphabet",
+      "Meta"
+    ],
+    "correctAnswer": "X Corp."
+  },
+  {
+    "question": "What\u2019s the 'icks' trend about?",
+    "answers": [
+      "Fitness tips",
+      "Hot takes on fashion",
+      "Weird dancing",
+      "Pet peeves in dating"
+    ],
+    "correctAnswer": "Pet peeves in dating"
+  },
+  {
+    "question": "What does the slang 'ate and left no crumbs' mean?",
+    "answers": [
+      "Cleaned up the kitchen",
+      "Failed miserably",
+      "Perfectly executed",
+      "Cooked too much"
+    ],
+    "correctAnswer": "Perfectly executed"
+  },
+  {
+    "question": "What dance challenge went viral with 'Cupid' by FIFTY FIFTY?",
+    "answers": [
+      "K-pop Hop",
+      "Heart Swipe",
+      "Cupid Shuffle",
+      "Knee-Spin"
+    ],
+    "correctAnswer": "Cupid Shuffle"
+  },
+  {
+    "question": "What meme started 'Is it cake?'?",
+    "answers": [
+      "TikTok challenges",
+      "Cake Boss episodes",
+      "Gordon Ramsay roasts",
+      "Hyper-realistic desserts"
+    ],
+    "correctAnswer": "Hyper-realistic desserts"
+  },
+  {
+    "question": "What\u2019s the name of Beyonc\u00e9\u2019s 2023 tour?",
+    "answers": [
+      "Renaissance Tour",
+      "Formation Tour",
+      "Queen Bee Live",
+      "Ivy Park Tour"
+    ],
+    "correctAnswer": "Renaissance Tour"
+  },
+  {
+    "question": "What is the term for 'the struggle to get Taylor Swift tickets'?",
+    "answers": [
+      "The Great War",
+      "Erasgate",
+      "Swiftie Survival",
+      "Ticketmaster Torture"
+    ],
+    "correctAnswer": "Erasgate"
+  }
+]

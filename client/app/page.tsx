@@ -5,7 +5,12 @@ import Leaderboard from "./leaderboard";
 import Initial from "./initial";
 
 // TODO: Prepare the questions to ask + (interesting questions, images?)
+// TODO: Change to 4 daily puzzles
+// - Crossword
+// - Riddle
+// - Connections style?
 // TODO: Setup an automatic question refresh and user session refresh
+// TODO: Make the wrong and correct more rewarding in design
 
 export default function Home() {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
