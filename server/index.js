@@ -39,8 +39,9 @@ app.get("/", (req, res) => {
 
 app.get("/api/questions", (req, res) => {
   const today = new Date();
-  const targetDate = new Date("November 20, 2024");
-  const timeDifference = today - targetDate;
+  const startDate = new Date("November 19, 2024");
+  const timeDifference =
+    today.setHours(0, 0, 0, 0) - startDate.setHours(0, 0, 0, 0);
   const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
   // Load the JSON file

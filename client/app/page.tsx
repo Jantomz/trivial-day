@@ -11,6 +11,7 @@ import Initial from "./initial";
 // - Connections style?
 // TODO: Setup an automatic question refresh and user session refresh
 // TODO: Make the wrong and correct more rewarding in design
+// TODO: Fix design of the question cards when on mobile
 
 export default function Home() {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
@@ -274,13 +275,18 @@ export default function Home() {
                             {answer}
                             {answer === choices[index] && " (Your choice)"}
                           </li>
-                          <div className="pl-4  text-[8px] flex">
+                          <div className="pl-4 text-[8px] flex">
                             {usersChoseThisAnswer
                               .slice(0, 2)
                               .map((user) => user.name)
                               .join(", ")}
                             {usersChoseThisAnswer.length > 2 &&
                               ` and ${usersChoseThisAnswer.length - 2} more`}
+                            <div className="hidden group-hover:block absolute bg-white text-black p-2 rounded shadow-lg">
+                              {usersChoseThisAnswer
+                                .map((user) => user.name)
+                                .join(", ")}
+                            </div>
                           </div>
                         </div>
                       );
